@@ -1,0 +1,39 @@
+.st-scroll,
+section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.st-scroll {
+	top: 0;
+	left: 0;
+	transition: all 0.6s ease-in-out;
+	
+	/* Let's enforce some hardware acceleration */
+	/* -webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden; */
+}
+
+
+/* For Arrow Buttons */
+/* .centeredArrow:checked ~ .st-scroll {
+	transform: translateY(-100%);
+} */
+
+
+/* for main nav bar */
+#st-control-portfolio:active ~ .st-scroll {
+	transform: translateY(-100%);
+}
+#st-control-aboutMe:checked ~ .st-scroll {
+	transform: translateY(-200%);
+}
+#st-control-contact:checked ~ .st-scroll {
+	transform: translateY(-300%);
+}
+
+/* For back to top button */
+/* #backToTop:checked ~ .st-scroll {
+	transform: translateY(+300%);
+} */

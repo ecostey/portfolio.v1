@@ -1,0 +1,74 @@
+#portfolio {
+    position: relative;
+    margin: 0;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+  }
+
+.cell {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+}
+
+.visual {
+    padding-left: 40px;
+}
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: left; 
+}
+
+.projectName {
+    font-size: 30px; 
+    margin-bottom: 0px;
+    padding-top: 4px;
+}
+
+.FetchImg {
+    border: orange solid 6px;
+    max-width: 200px;
+    max-height: 200px;
+    /* border-radius: 50%; */
+}
+
+.BiblioImg {
+    border: rgb(0, 0, 77) solid 6px;
+    max-width: 200px;
+    max-height: 200px;
+    /* border-radius: 50%; */
+}
+
+.GovithImg {
+    border: rgb(133, 205, 50) solid 6px;
+    max-width: 200px;
+    max-height: 200px;
+    /* border-radius: 50%; */
+}
+
+.CocktailImg {
+    /* border-radius: 50%; */
+    border: grey solid 6px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.githubIcon {
+    max-width: 100px;
+    max-height: 100px;
+}
